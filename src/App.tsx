@@ -83,7 +83,7 @@ function App() {
                 <div className="flex items-center">
                   <img
                     className="invert w-[1.65rem]"
-                    src="../public/php.svg"
+                    src="src/images/php.svg"
                     alt="PHP"
                   />
                   <div className="text-xl font-medium ml-2">PHP / Laravel</div>
@@ -239,7 +239,7 @@ function App() {
             </div>
           </div>
           <div className="flex-1 flex items-center gap-3">
-            <LinkedinLogo />
+            <LinkedinLogo size={24} />
             <div className="flex gap-2">
               <span className="text-sm font-medium tracking-wider">
                 https://www.linkedin.com/in/gabriel-torres-brum
