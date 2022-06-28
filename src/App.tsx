@@ -16,6 +16,8 @@ import {
 } from "phosphor-react";
 
 function App() {
+  const phpIcon = new URL('./images/php.svg', import.meta.url).href
+
   return (
     <div className="flex flex-col h-screen">
       <header className="flex border-b border-zinc-200">
@@ -82,8 +84,9 @@ function App() {
               <div className="p-5 rounded border border-zinc-300 flex flex-col gap-5">
                 <div className="flex items-center">
                   <img
+                    id="php-icon"
                     className="invert w-[1.65rem]"
-                    src="src/images/php.svg"
+                    src={phpIcon}
                     alt="PHP"
                   />
                   <div className="text-xl font-medium ml-2">PHP / Laravel</div>
