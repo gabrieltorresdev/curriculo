@@ -26,9 +26,17 @@ function App() {
             <strong className="text-center text-3xl tracking-wider">
               Gabriel Torres Brum
             </strong>
-            <div className="grid grid-cols-12 p-4">
+            <div className="flex flex-col gap-2 px-4">
+              <span className="text-lg font-bold">Objetivo</span>
+              <strong className="font-normal">
+                Fazer parte de uma equipe que possa me proporcionar crescimento,
+                tanto na parte técnica do desenvolvimento de sistemas, quanto nas
+                regras de negócio que essa área demanda.
+              </strong>
+            </div>
+            <div className="grid grid-cols-12 px-4">
               <div className="col-span-7 flex flex-col gap-3">
-                <strong>Contato</strong>
+                <span className="text-lg font-bold">Contato</span>
                 <div className="flex gap-2">
                   <Envelope size={20} />
                   <span className="text-sm font-medium tracking-wider">
@@ -49,7 +57,7 @@ function App() {
                 </div>
               </div>
               <div className="col-span-5 flex flex-col gap-3">
-                <strong>Sobre mim</strong>
+              <span className="text-lg font-bold">Sobre mim</span>
                 <div className="flex justify-start gap-2">
                   <IdentificationCard size={20} />
                   <span className="text-sm font-medium tracking-wider">
@@ -74,15 +82,21 @@ function App() {
         </header>
         <main className="flex flex-col flex-1">
           <section className="flex flex-1 bg-sky-800">
-            <div className="flex flex-col flex-1 gap-5 text-white py-10 pl-10">
-              <strong className="text-2xl font-extrabold tracking-wider">
+            <div
+              className="flex flex-col flex-1 gap-5
+              text-white py-10 pl-10"
+              >
+              <strong className="text-xl font-extrabold tracking-wider">
                 Experiência Técnica
               </strong>
               <div className="flex flex-col gap-5">
-                <span className="tracking-wider text-lg">
-                  Tecnologias utilizadas em ambiente profissional:
+                <span className="tracking-wider">
+                  Tecnologias utilizadas em ambiente profissional
                 </span>
-                <div className="p-5 rounded border border-zinc-300 flex flex-col gap-5">
+                <div
+                  className="p-5 rounded border border-zinc-300
+                  flex flex-col gap-5"
+                  >
                   <div className="flex items-center">
                     <img
                       id="php-icon"
@@ -90,35 +104,42 @@ function App() {
                       src={phpIcon}
                       alt="PHP"
                     />
-                    <div className="text-xl font-medium ml-2">PHP / Laravel</div>
+                    <div className="text-lg font-medium ml-2">
+                      PHP / Laravel
+                    </div>
                   </div>
                   <div className="flex items-center">
                     <FileJs size={28} />
-                    <div className="text-xl font-medium ml-2">
+                    <div className="text-lg font-medium ml-2">
                       Javascript / Node JS
                     </div>
                   </div>
                   <div className="flex flex-col gap-5">
                     <div className="flex items-center">
                       <FileCss size={28} />
-                      <div className="text-xl font-medium ml-2">
+                      <div className="text-lg font-medium ml-2">
                         CSS / Tailwind CSS
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <Database size={28} />
-                    <div className="text-xl font-medium ml-2">MySQL</div>
+                    <div className="text-lg font-medium ml-2">
+                      MySQL
+                    </div>
                   </div>
                 </div>
                 <span className="tracking-wider text-lg">
-                  Tecnologias utilizadas em projetos pessoais e cursos (interesses):
+                  Tecnologias utilizadas em projetos pessoais e cursos (interesses)
                 </span>
-                <div className="p-5 rounded border border-zinc-300 flex flex-col gap-5">
+                <div
+                  className="p-5 rounded border border-zinc-300
+                  flex flex-col gap-5"
+                  >
                   <div className="flex flex-col gap-5">
                     <div className="flex items-center">
                       <Atom size={28} />
-                      <div className="text-xl font-medium ml-2">
+                      <div className="text-lg font-medium ml-2">
                         React JS / Next JS
                       </div>
                     </div>
@@ -126,13 +147,13 @@ function App() {
                   <div className="flex flex-col gap-5">
                     <div className="flex items-center">
                       <FileTsx size={28} />
-                      <div className="text-xl font-medium ml-2">Typescript</div>
+                      <div className="text-lg font-medium ml-2">Typescript</div>
                     </div>
                   </div>
                   <div className="flex flex-col gap-5">
                     <div className="flex items-center">
                       <Graph size={28} />
-                      <div className="text-xl font-medium ml-2">
+                      <div className="text-lg font-medium ml-2">
                         GraphQL / GraphCMS
                       </div>
                     </div>
@@ -141,11 +162,17 @@ function App() {
               </div>
             </div>
             <div className="mx-10 border"></div>
-            <div className="flex flex-col flex-1 gap-5 text-white py-10 pr-10">
-              <strong className="text-2xl font-extrabold tracking-wider">
+            <div
+              className="flex flex-col flex-1 gap-5
+              text-white py-10 pr-10"
+              >
+              <strong className="text-xl font-extrabold tracking-wider">
                 Experiência Profissional
               </strong>
-              <div className="flex flex-1 items-center p-5 rounded bg-zinc-200 text-sky-700 tracking-wider font-medium">
+              <div
+                className="flex flex-1 items-center p-5 rounded bg-zinc-200
+                text-sky-700 tracking-wider text-sm font-medium"
+                >
                 <ul>
                   <li>
                     <span className="font-bold mr-1">
@@ -173,7 +200,10 @@ function App() {
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-1 items-center p-5 rounded bg-zinc-200 text-sky-700 tracking-wider font-medium">
+              <div
+                className="flex flex-1 items-center p-5 rounded bg-zinc-200
+                text-sky-700 tracking-wider text-sm font-medium"
+                >
                 <ul>
                   <li>
                     <span className="font-bold mr-1.5">
@@ -201,7 +231,10 @@ function App() {
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-1 items-center p-5 rounded bg-zinc-200 text-sky-700 tracking-wider font-medium">
+              <div
+                className="flex flex-1 items-center p-5 rounded bg-zinc-200
+                text-sky-700 tracking-wider text-sm font-medium"
+                >
                 <ul>
                   <li>
                     <span className="font-bold mr-1">
@@ -219,7 +252,7 @@ function App() {
                     <span className="font-bold mr-1">
                       Atividade:
                     </span>
-                    Desenvolvimento de aplicações da web (em ascenção)
+                    Desenvolvimento de aplicações da web
                   </li>
                   <li>
                     <span className="font-bold mr-1">
@@ -232,38 +265,39 @@ function App() {
             </div>
           </section>
         </main>
-        <footer className="flex border-t border-zinc-200 p-10">
+        <footer className="flex border-t border-zinc-200 px-10 py-6">
           <div className="flex flex-col flex-1 items-start justify-center gap-2">
             <div className="flex-1 flex items-center gap-3 group">
-              <GithubLogo size={24} />
+              <GithubLogo size={28} />
               <div className="flex gap-2">
                 <a
                   href="https://www.github.com/gabriel-torres-brum"
-                  className="group-hover:opacity-95 transition text-sm font-medium tracking-wider"
+                  className="group-hover:opacity-95 transition
+                  text-sm font-medium tracking-wider"
                   >
-                  Github
+                  Meu Github
                 </a>
               </div>
             </div>
             <div className="flex-1 flex items-center gap-3 group">
-              <LinkedinLogo size={24} />
+              <LinkedinLogo size={28} />
               <div className="flex gap-2">
                 <a
                   href="https://www.linkedin.com/in/gabriel-torres-brum"
-                  className="group-hover:opacity-95 transition text-sm font-medium tracking-wider"
+                  className="group-hover:opacity-95 transition
+                  text-sm font-medium tracking-wider"
                   >
-                  LinkedIn
+                  Meu LinkedIn
                 </a>
               </div>
             </div>
           </div>
           <div>
-            <span className="block text-right">Veja online:</span>
+            <span className="block text-right">Atualizações online</span>
             <strong>
               https://curriculo-theta.vercel.app
             </strong>
           </div>
-
         </footer>
       </div>
     </div>
