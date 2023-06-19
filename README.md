@@ -1,3 +1,4 @@
 #Currículo - Gabriel Torres Brum
 
-##Acesse online
+##Acesse online:
+https://curriculo-theta.vercel.app/
