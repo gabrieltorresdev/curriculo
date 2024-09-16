@@ -12,19 +12,23 @@ export function getPeriodoExperiencia(lang: AppContextInterface["language"], dat
     }
 
     return `${anos} ${anos === 1 ? 'year' : 'years'} and ${meses} ${meses === 1 ? 'month' : 'months'}`;
-  } else if (anos > 0) {
+  }
+  
+  if (anos > 0) {
     if (lang === 'pt') {
       return `${anos} ${anos === 1 ? 'ano' : 'anos'}`;
     }
 
     return `${anos} ${anos === 1 ? 'year' : 'years'}`;
-  } else if (meses > 0) {
+  }
+  
+  if (meses > 0) {
     if (lang === 'pt') {
       return `${meses} ${meses === 1 ? 'mês' : 'meses'}`;
     }
 
     return `${meses} ${meses === 1 ? 'month' : 'months'}`;
-  } else {
-    return lang === 'pt' ? 'Menos de 1 mês' : 'Less than a month';
   }
+    
+  return lang === 'pt' ? 'Menos de 1 mês' : 'Less than a month';
 };
